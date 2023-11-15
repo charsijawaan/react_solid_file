@@ -1,7 +1,7 @@
 import BlogData from "@/components/Blog/blogData";
 import { Link } from "react-router-dom";
 
-const RelatedPost = async () => {
+const RelatedPost = () => {
   return (
     <>
       <div className="animate_top rounded-md border border-stroke bg-white p-9 shadow-solid-13 dark:border-strokedark dark:bg-blacksection">

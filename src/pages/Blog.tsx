@@ -1,9 +1,14 @@
+import { Helmet } from "react-helmet";
 import BlogData from "@/components/Blog/blogData";
 import BlogItem from "@/components/Blog/BlogItem";
 
 const BlogPage = () => {
   return (
     <>
+      <Helmet>
+        <title>Blog Page - Solid SaaS Boilerplate</title>
+        <meta name="description" content="This is Blog page for Solid Pro" />
+      </Helmet>
       {/* <!-- ===== Blog Grid Start ===== --> */}
       <section className="py-20 lg:py-25 xl:py-30">
         <div className="mx-auto mt-15 max-w-c-1280 px-4 md:px-8 xl:mt-20 xl:px-0">

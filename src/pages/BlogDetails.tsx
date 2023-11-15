@@ -1,9 +1,17 @@
+import { Helmet } from "react-helmet";
 import RelatedPost from "@/components/Blog/RelatedPost";
 import SharePost from "@/components/Blog/SharePost";
 
 const SingleBlogPage = () => {
   return (
     <>
+      <Helmet>
+        <title>Blog Details Page - Solid SaaS Boilerplate</title>
+        <meta
+          name="description"
+          content="This is Blog details page for Solid Pro"
+        />
+      </Helmet>
       <section className="pb-20 pt-35 lg:pb-25 lg:pt-45 xl:pb-30 xl:pt-50">
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           <div className="flex flex-col-reverse gap-7.5 lg:flex-row xl:gap-12.5">

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import Hero from "@/components/Hero";
 import Brands from "@/components/Brands";
 import Feature from "@/components/Features";
@@ -14,21 +15,29 @@ import Blog from "@/components/Blog";
 
 const Home = () => {
   return (
-    <main>
-      <Hero />
-      <Brands />
-      <Feature />
-      <About />
-      <FeaturesTab />
-      <FunFact />
-      <Integration />
-      <CTA />
-      <FAQ />
-      <Testimonial />
-      <Pricing />
-      <Contact />
-      <Blog />
-    </main>
+    <>
+      <Helmet>
+        <title>
+          Next.js Starter Template for SaaS Startups - Solid SaaS Boilerplate
+        </title>
+        <meta name="description" content="This is Home for Solid Pro" />
+      </Helmet>
+      <main>
+        <Hero />
+        <Brands />
+        <Feature />
+        <About />
+        <FeaturesTab />
+        <FunFact />
+        <Integration />
+        <CTA />
+        <FAQ />
+        <Testimonial />
+        <Pricing />
+        <Contact />
+        <Blog />
+      </main>
+    </>
   );
 };
 
